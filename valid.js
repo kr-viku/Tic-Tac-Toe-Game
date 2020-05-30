@@ -36,6 +36,7 @@ function checkSubmit()
     if((p1flag && p2flag))
     {
         subAuth.className="btn btn-success";
+        
         subAuth.disabled=false;
         
     }

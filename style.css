@@ -1,10 +1,52 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background-image: url("img7.jpg");
+    height: 100%;
+    width: 98%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
 }
+
+/* .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img4.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000;
+    color: #10ff00;
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h3 {
+    color: rgb(255, 217, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+
 table#game td{
     background-color: beige;
-    height:200px;
-    width:200px;
+    height:140px;
+    width:140px;
     border:solid saddlebrown 5px;
     border-radius:10px;
     text-align:center;
@@ -23,3 +65,13 @@ button#restart{
 
 
 }
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
