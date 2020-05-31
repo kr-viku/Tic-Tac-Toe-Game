@@ -27,14 +27,14 @@ const game = {
 function endgame(winner) {
   if (winner) {
     if (winner == "X") {
-      finalMessge.innerText = `Congratulation!! ${localStorage.getItem("xname")}🤩🤩 you are a winner. \n Hurrayy🥳🎉 you play very well.`;
+      finalMessge.innerText = `Congratulation!! ${localStorage.getItem("xname")}🤩🤩 you are a winner. \n Keep it up 🥳🎉 Well Played.`;
       popup.style.display = "flex";
       setTimeout(function () {
         popup.style.display = "none";
       }, 5000);
     }
     else{
-        finalMessge.innerText = `Congratulation!! ${localStorage.getItem("oname")}\nyou are a winner. Hurrayy🥳🎉`;
+        finalMessge.innerText = `Congratulation!! ${localStorage.getItem("oname")}🤩🤩 you are a winner. \n Keep it up 🥳🎉 Well Played.`;
       popup.style.display = "flex";
       setTimeout(function () {
         popup.style.display = "none";
