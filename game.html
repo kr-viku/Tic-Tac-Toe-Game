@@ -9,8 +9,12 @@
 <body>
     <div class="hero-image">
     <h1 align="center" style="text-decoration: blue;">Let's Play Tic-Tac-Toe</h1>
-        <h2 class="glow blink_me" align="center"> Player Turn- <span id="player"> X</span></h2>
-        <div style = "text-align:center;"><button id="restart" onclick="buttonRestart()">RESTART</button></div>
+        <h2 class="glow blink_me" align="center"> Player Turn- <span id="player"><script>document.write(localStorage.getItem("xname"))</script></span></h2>
+        <div>
+        <div  style = "text-align:center;"><button id="restart" onclick="buttonRestart()">RESTART</button></div>
+        <br>
+        <div style = "text-align:center;"><button id="restart" onclick="location.href='index.html'">NEW GAME</button></div>
+        </div>
         <h3 align="center" style="text-decoration: blue;">Click on the below box who has turn!!👇👇</h3>
         <table id="game" align="center">
             <tr>
@@ -31,8 +35,16 @@
         </table>
     </div>
 
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+          <h2 id="final-message"></h2>
+          <h3 id="final-message-reveal-word"></h3>
+        </div>
+      </div>
+
 
     <script async defer src="script.js" ></script>
+    <!-- <script async defer src="valid.js" ></script> -->
 
 </body>
 </html>
